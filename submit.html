@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>submission</title>
+        <style>
+            #success {
+                font-family: monospace;
+                font-size: 40px;
+                text-align: center;
+            }
+            #temp {
+                text-align: center;
+            }
+
+            a:hover {
+                color:crimson;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="success">
+            <span></span>
+        </div>
+        <br><br>
+        <p id="temp"><a href="./fillup.html">Back &#8617;</a></p>
+
+        <script type="text/javascript">
+            var titles = document.getElementById("success");
+            var paramas = new URLSearchParams(window.location.search);
+
+            function validate()
+            {
+                titles.innerHTML = "Your response <br> has been received";
+                titles.setAttribute("style", "color: red;");
+                return;
+            }
+            var temp = validate();
+        </script>
+    </body>
+</html>
